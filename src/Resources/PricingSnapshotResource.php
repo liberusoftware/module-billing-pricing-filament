@@ -12,6 +12,8 @@ use Liberu\Billing\Pricing\Models\PricingSnapshot;
 
 final class PricingSnapshotResource extends Resource
 {
+    protected static string|\UnitEnum|null $navigationGroup = 'Catalog & Pricing';
+
     use ScopesCurrentTeam;
 
     protected static ?string $model = PricingSnapshot::class;

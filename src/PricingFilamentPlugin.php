@@ -20,7 +20,7 @@ final class PricingFilamentPlugin implements Plugin
 
     public function getId(): string
     {
-        return 'liberu-billing-pricing';
+        return 'module-billing-pricing-filament';
     }
 
     public function register(Panel $panel): void
