@@ -30,6 +30,8 @@ final class PricingPlanResource extends Resource
 
     protected static string|BackedEnum|null $navigationIcon = 'heroicon-o-banknotes';
 
+    protected static string|\UnitEnum|null $navigationGroup = 'Catalog & Pricing';
+
     public static function form(Schema $schema): Schema
     {
         return $schema->components([

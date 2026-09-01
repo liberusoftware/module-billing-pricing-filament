@@ -15,6 +15,8 @@ use Liberu\Billing\Pricing\Models\PricingDiscount;
 
 final class PricingDiscountResource extends Resource
 {
+    protected static string|\UnitEnum|null $navigationGroup = 'Catalog & Pricing';
+
     use ScopesCurrentTeam;
 
     protected static ?string $model = PricingDiscount::class;
